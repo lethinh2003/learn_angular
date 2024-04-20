@@ -1,0 +1,17 @@
+<main>
+  <a [routerLink]="['/']">
+    <header class="brand-name">
+      <img
+        class="brand-logo"
+        src="/favicon.ico"
+        alt="logo"
+        aria-hidden="true"
+      />
+    </header>
+  </a>
+  <a [routerLink]="['/heroes']"> Heroes </a>
+  <section class="content">
+    <router-outlet></router-outlet>
+  </section>
+  <app-messages></app-messages>
+</main>
